@@ -1,0 +1,238 @@
+:root {
+    --primary : #DFD3C3;
+    --bg :  #1E201E;
+    --bg1 : #3C3D37;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--bg1);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    padding: 20px;
+    color: white;
+    font-size: 13px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+}
+
+.navbar li {
+    font-size:20px;
+    margin: 0 10px;
+    padding: 0 10px;
+    color: white;
+}
+
+.navbar li:hover {
+    color: var(--bg1);
+    font-weight: bold;
+    transform: scale(1.4);
+    background-color: #ccc;
+    border-radius: 20px;
+    padding: 5px;
+
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Home */
+.home {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    gap: 20px;
+}
+
+.foto {
+    max-width: 100%;
+    border-radius: 50%;
+    height: 50vh;
+}
+
+.biodata {
+    margin: 0 200px;
+    text-align: center
+}
+
+/* portofolio */
+.portofolio, .contact, .about {
+    background-color: var(--bg);
+    padding: 2rem 1rem;
+    justify-items: center;
+}
+
+.text-folio, .text-contact, .text-about {
+    margin-top: 5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.img-folio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.project {
+    width: 19vh;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project p {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+/* About */
+.about {
+    background-color: white;
+}
+
+.text-about {
+    color: black;
+}
+
+.about p {
+    font-size: 19px;
+    margin: 2rem 6rem;
+    text-align: center;
+}
+
+.about ul {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.about ul li {
+    list-style: none;
+    text-align: center;
+}
+
+/* Contact */
+.contact {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--bg);
+    box-sizing: border-box;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--bg1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact form label {
+    font-size: 1rem;
+    text-align: left;
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form input[type="tel"],
+.contact form textarea {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+.contact form textarea {
+    height: 150px;
+}
+
+.contact form button {
+    background-color: var(--bg);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto 0 auto;
+    
+}
+
+.contact form button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* footer */
+.footer {
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.footer div a {
+    text-decoration: none;
+    color: #1E201E;
+}
+
+.p {
+    font-style: italic;
+} 
